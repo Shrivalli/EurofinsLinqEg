@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace LinqEg
 {
+    // A comment from Hamza Rarani
     class prdclient
     {
         public static List<Product> products = Product.getAllPrds();

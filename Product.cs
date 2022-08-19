@@ -39,6 +39,10 @@ namespace LinqEg
             return p;
         }
 
+        public static void AddProduct(Product p)
+        {
+            prds.Add(p);
+        }
         public override string ToString()
         {
             return string.Format(Pid + " " + Pname + " "+Price);

@@ -17,6 +17,15 @@ namespace LinqEg
             }
         }
 
+        public static void AddNewPrd()
+        {
+            Console.WriteLine("Enter Pid, Pname and Price");
+            Product p = new Product();
+            p.Pid = Convert.ToInt32(Console.ReadLine());
+            p.Pname = Console.ReadLine();
+            p.Price = float.Parse(Console.ReadLine());
+            Product.AddProduct(p);
+        }
         public static void DisplayPartPrd()
         {
             Console.WriteLine("Enter the product ID");
@@ -26,8 +35,10 @@ namespace LinqEg
         }
         public static void Main()
         {
+           
+            //DisplayPartPrd();
+            AddNewPrd();
             DisplayProducts();
-            DisplayPartPrd();
         }
     }
 }
